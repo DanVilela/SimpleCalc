@@ -1,0 +1,54 @@
+## Build
+bin/
+obj/
+out/
+Debug/
+Release/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userprefs
+*.csproj.user
+
+## Rider / JetBrains
+.idea/
+*.DotSettings.user
+
+## Logs & Temp
+*.log
+*.tmp
+*.temp
+~$*
+
+## Sistema operacional
+.DS_Store
+Thumbs.db
+
+## NuGet
+*.nupkg
+packages/
+*.snupkg
+.nuget/
+
+## Cobertura de testes
+coverage/
+coverage.xml
+coverage.json
+TestResults/
+*.coverage
+*.coveragexml
+
+## Dotnet tools outputs
+*.dll
+*.exe
+*.mdb
+*.pdb
+
+## Arquivos gerados por tooling
+*.cache
+*.lock.json
+
+## Sonar / CI local
+.sonar/
