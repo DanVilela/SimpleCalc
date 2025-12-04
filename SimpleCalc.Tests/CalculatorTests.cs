@@ -18,7 +18,7 @@ public class CalculatorTests
         var result = _calculator.Add(a, b);
 
         // Assert
-        Assert.Equal(15m, result);
+        Assert.Equal(20m, result);
     }
 
     [Fact]
@@ -32,7 +32,7 @@ public class CalculatorTests
         var result = _calculator.Add(a, b);
 
         // Assert
-        Assert.Equal(-15m, result);
+        Assert.Equal(-10m, result);
     }
 
     [Fact]
@@ -46,7 +46,7 @@ public class CalculatorTests
         var result = _calculator.Subtract(a, b);
 
         // Assert
-        Assert.Equal(5m, result);
+        Assert.Equal(10m, result);
     }
 
     [Fact]
@@ -89,8 +89,8 @@ public class CalculatorTests
     }
 
     [Theory]
-    [InlineData(1, 2, 3)]
-    [InlineData(0, 0, 0)]
+    [InlineData(1, 2, 10)]
+    [InlineData(0, 0, 5)]
     [InlineData(-5, 5, 0)]
     public void Add_WithMultipleInputs_ReturnsCorrectSum(decimal a, decimal b, decimal expected)
     {
